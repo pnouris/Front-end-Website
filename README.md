@@ -7,6 +7,6 @@ HTML, CSS, JavaScript and online APIs
  
  
  ## APIs used
- [OpenDota API](https://docs.opendota.com/)
- [PandaScore API](https://pandascore.co/)
- Youtube Data API
+ * [OpenDota API](https://docs.opendota.com/)
+ * [PandaScore API](https://pandascore.co/)
+ * Youtube Data API
