@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/aboutStyle.css">
+  <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.min.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <title>About Dota2</title>
+</head>
+
+<body>
+  <!--TOP MAIN MENU-->
+  <link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+  <div id="mainNavMenu">
+    <a href="index.html" class="btn">Home</a>
+
+    <a href="Esport.html" class="btn">Esport</a>
+    <div class="dropdown">
+      <a href="#" class="btn dropbtn">Pro Leagues</a>
+      <div class="dropdown-content">
+        <a href="DotaPlayer.html" class="insideDrop">Player Standings</a>
+        <a href="DotaTeam.html" class="insideDrop">Team Standings</a>
+      </div>
+    </div>
+    <a href="about.html" class="btn">About</a>
+  </div>
+  <!--SLIDING SIDE BAR INSIDE -INFOS LANGUAGE TRASLATION/FACEBOOK LOGO/YOUTUBE-->
+  <div id="mySidenav" class="sidenav">
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="PlayFreeButton" href="http://store.steampowered.com/app/570/Dota_2/">Play for Free</a>
+    <h2 class="steamHeader">ON</h2>
+    <div id="SteamLogo"></div>
+    <!--SLIDING SIDE BAR INSIDE -INFOS LANGUAGE TRASLATION/FACEBOOK LOGO/YOUTUBE-->
+    <div id="sideSettings">
+      <!--SEARCH AREA / BUTTON-->
+      <header><h4 id="search_Title">Search for more videos:</h4></header>
+      <div id="BoxSocial">
+        <form id="searchF" onsubmit="return search()"> <!--when user submit in search box return search function -->
+          <!--button and string written in the searchbox-->
+          <div class="insideBox">
+            <input type="search" id="search_term" placeholder="Search on Youtube...">
+            <input type="submit" id="search_button" value="">
+          </div>
+        </form>
+        <a href="index.html">Home</a>
+        <a href="reference.html">Reference</a>
+        <a href="https://www.facebook.com/dota2/"><img src="http://login.create.net/images/icons/user/facebook_30x30.png" alt=""></a>
+        <a href="https://twitter.com/ESLDota2"><img src="http://login.create.net/images/icons/user/twitter_30x30.png" alt=""></a>
+        <a href="https://www.twitch.tv/directory/game/Dota%202"><img src="img/GlitchBadge_Purple_32px.png" alt=""></a>
+
+      </div>
+    </div>
+  </div>
+  <!-- OPEN SIDEBAR 3 LINE ICON (Use any element to open the sidenav) -->
+  <div onclick="openNav()">
+    <div id="side-Nav">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </div>
+
+
+  <div id="parag01" class="paragBoxes">
+    <div class="onlyText">
+      <h2 id="theHeadlines01">Dota 2</h2>
+      <p>Dota 2 is a free-to-play multiplayer online battle arena (MOBA) video game developed and published
+        by Valve Corporation. The game is the stand-alone sequel to Defense of the Ancients (DotA). Is one of the most
+        played games on Steam, a digital distribution platform developed by Valve Corporation.
+      </p>
+    </div>
+  </div>
+  <div id="parag02" class="paragBoxes">
+    <div class="onlyText">
+      <h2 id="theHeadlines02">Basic Introduction to the Game</h2>
+      <p>Dota 2 is an RTS-styled competitive team game with RPG elements. Two competing teams of five players (Radiant Team and Dire Team).
+        The main objective is to destroy the enemy Ancient inside their stronghold.
+        Each player controls a single Hero of their choice, which can be improved during the game.
+        By earning experience and gold when a nearby minion or heroe dies, you can upgrade your hero's abilities and buy items that provide various benefits.
+      </p>
+      <p>
+        Dota 2 has a heavy emphasis on tactics and team co-ordination, and a deep amount of strategy focused on building up strength as fast as possible,
+        optimal itemization, and selecting what order to upgrade your hero's spells.</p>
+      </div>
+    </div>
+    <div id="parag03" class="paragBoxes">
+      <div class="onlyText">
+        <h2 id="theHeadlines03">Free Content</h2>
+        <p>
+          A competitive game needs to be balanced, and to ensure that everyone is playing on an even field. Therefore, the core content of the game and
+          all of its 113 heroes are available to all players for free. Fans can collect cosmetics for heroes and fun add-ons for the world they inhabit,
+          but everything you need to play is already included before you join your first match.
+        </p>
+      </div>
+    </div>
+    <!--YOUTUBE OUTPUT VIDEOS-->
+    <div id="scroll">
+      <ul id="output"></ul>
+    </div>
+    <!--YOUTUBE NEXT/PREVIOUS BUTTONS-->
+    <div id="BackNext"></div>
+    <!--SCRIPTS JS-->
+    <script src="JS/aboutJS.js"></script>
+    <script src="JS/searchY.js"></script>
+    <!--FANCYBOX JS-->
+    <script src="fancybox/jquery.fancybox.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+    });
+    </script>
+
+
+
+    <footer>
+      <p>Copyrights &copy; 2017, All Rights Reserved</p>
+    </footer>
+  
+
+  </body>
+
+
+  </html>

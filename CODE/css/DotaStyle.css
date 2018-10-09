@@ -1,0 +1,429 @@
+html{
+  background: #1C242D;
+  color: white;
+  font-size: 14px;
+  font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.thewhole{
+  background-image: url("../img/dota2shield.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1500px;
+}
+body{
+  font-family: "Segoue", "sans-serif",'Montserrat','Helvetica Nueue', 'Helvetica', 'Arial';
+  font-size: 14px;
+  line-height: 1.6em;
+  height: auto;
+  min-height: 100%;
+}
+/*////////////////////////MAIN MENU SIMILAR DESIGN/////////////////////////////////*/
+
+* {  /*Copyright (c) 2016 by Karim Balaa (http://codepen.io/karimbalaa/pen/WboBBY)*/
+  -webkit-transition-property: all;
+  -webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+  -moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
+
+#mainNavMenu{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1em;
+  z-index: 1;
+}
+.btn{
+  color:#D3D3D3;
+  background:rgba(0, 0, 0, 0.5);
+  padding:10px 30px;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  z-index: 1;
+}
+
+.btn:hover{
+  border:none;
+  background:rgba(0, 0, 0, 0.4);
+  background:#fff;
+  padding:20px 20px;
+  color:#1b1b1b;
+}
+.dropdown{
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+.dropdown-content a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 0em;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+  margin-top: 0.35em;
+  margin-left: 0;
+  z-index: 999;
+}
+
+
+.insideDrop{
+  margin-bottom: 1em;
+  color:#D3D3D3;
+  background:rgba(0, 0, 0, 0.2);
+  padding:5px 15px;
+  font-size:10px;
+  text-decoration:none;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  z-index: 1;
+}
+.insideDrop:hover{
+  border:none;
+  background:rgba(0, 0, 0, 0.2);
+  background:#fff;
+  padding:10px 10px;
+  color:#1b1b1b;
+}
+
+/*///////////SIDE BAR MENU + ICON/////////////////////////////////////*/
+.mainH1{
+  text-align: center;
+  color: #FFF;
+}
+.mainH1 a:hover{
+  text-decoration: none;
+  color:#FFF;
+}
+
+.mainH1 a,visited{
+  text-decoration: none;
+  color: #FFF;
+}
+#side-Nav{
+  width: 4%;
+  height: 20%;
+  right: 0;
+  position: fixed;
+  top: 0;
+  padding-top: 5em;
+  margin-right: 10em;
+  z-index: 800;
+}
+#mySidenav{
+  z-index: 999;
+}
+
+.bar1,.bar2,.bar3 {
+  right: 0;
+  width: 45px;
+  height: 6px;
+  background-color: #FFFFFF;
+  margin: 6px 0;
+  cursor: pointer;
+}
+.bar1:hover,.bar2:hover,.bar3:hover {
+  background-color: #FFD700;
+}
+
+/*////////////// The side navigation menu///////////////// */
+
+.sidenav {
+  height: 100%;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #ddd;
+  display: block;
+  transition: 0.3s;
+  margin-left: 1em;
+  text-transform: uppercase;
+  font-family:  'Helvetica', 'Arial';
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 46px;
+  margin-left: 50px;
+}
+a.PlayFreeButton{
+  text-transform: uppercase;
+  background-color: #111C26;
+  border: 1px solid #336391;
+  border-radius: 3px;
+  width: 185px;
+  height: 41px;
+  display: inline-block;
+  line-height: 41px;
+  text-shadow: 2px 2px 5px #000000;
+  color: #4585C3;
+  letter-spacing: 5px;
+  -webkit-text-stroke: 0.2px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+#SteamLogo{
+  background-image: url('http://cdn.dota2.com/apps/dota2/images/blog/play/steam_logo.png');
+  height: 62px;
+  width: 156px;
+  position: absolute;
+  margin-left: 3em;
+  border-bottom: 1px solid #393a3c;
+}
+
+.steamHeader{
+  position: relative;
+  display: block;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000000;
+  color: #4585C3;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+/*/////////////Search button and box//////////////////*/
+#BoxSocial{
+  margin-top: 1em;
+
+}
+#search_Title{
+  color: #ffffff;
+  font-size: 12px;
+  margin-left: 3em;
+  margin-top: 8em;
+}
+#searchF{
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 3em;
+}
+#search_button{
+  position: absolute;
+  cursor: text;
+  background: transparent no-repeat;
+  margin-left: 1em;
+}
+/*Loading animation*/
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  margin: -75px 0 0 -75px;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #CFB53B;
+  animation: spin 2s linear infinite;
+}
+
+
+/*////////////////TABLE DESIGN TEAM////////////////////*/
+.standings-container{
+  margin: auto;
+  position: relative;
+  max-width: 60.75em;
+  background-color: transparent;
+}
+.team-standings{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+h1{
+  font-size: 2.4em;
+  color: white;
+  line-height: 1em;
+  text-transform: capitalize;
+}
+.tables-subtitle{
+  color: #C0C0C0;
+  margin-top: 3em;
+  font-size: 1.1em;
+}
+
+#table_box{
+  background: transparent;
+  border:none;
+  padding: 0;
+  clear: right; /*specifies wether an elem can be next to floating elem that are before it, or move below*/
+}
+
+table{
+  text-align: right;
+  vertical-align: middle;
+}
+
+tr:nth-child(odd){
+  background: rgba(11,19,19,0.4);
+}
+tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.5);
+}
+.table_teams{
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+}
+th{
+  cursor: pointer;
+  padding: 8px 4px;
+}
+td{
+  position: relative;
+  padding: 0.5em 0.3em;
+  vertical-align: middle;
+}
+
+.team-img{
+  margin-right: 0.5em;
+}
+.theLogoImg{
+  width: 2.5em;
+  height: auto;
+  margin-right: 0.3em;
+  vertical-align: middle;
+  margin-bottom: 0.5em;
+}
+
+
+
+/*FANCY BOX*/
+.fancybox h3,a{
+  text-decoration: none;
+}
+.fancybox h3,a,visited{
+  text-decoration: none;
+  color: #000;
+}
+.fancybox h3,a:hover{
+  color: red;
+}
+/*/////////////////////Outputs design////////////////////////////////////////*/
+#scroll{
+  /*  clear: both; /*clear == specifies wether an eleme can be next/below floating elemts*/
+  clear: both;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  overflow: auto;
+}
+.vidTitle h3{
+  font-size: 16px;
+  font-family: 'Helvetica', 'Arial';
+}
+.vidTitle h3 a{
+  color: #FFF;
+}
+.vidTitle h3 a:hover{
+  color: red;
+}
+#output li{
+  height: 10%;
+  padding: 3em;
+  top: 0;
+}
+#output{
+  padding: 10px 0;
+  padding-bottom: 2em;
+  list-style: none;
+  overflow: auto;
+}
+.list-left{
+  float: left;
+  width: 20%;
+
+}
+.list-left img{
+  width: 100%;
+  padding: 3px;
+  border: solid #000000 1px;
+}
+.list-right{
+  float: right;
+  width: 60%;
+  margin-right: 20em;
+  margin-top: 3em;
+}
+.clearFix{
+  clear: both;
+}
+
+
+footer {
+  clear: both; /*clear == specifies wether an eleme can be next/below floating elemts*/
+  position: relative;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  margin-top: -2em;
+  height: 3em;
+  text-align: center;
+}
+
+/*PREVIOUS NEXT BUTTON*/
+.pg-btn{
+  cursor: pointer;
+  color: #333;
+  border-radius: 5px;
+  border: #ccc 1px solid;
+  margin: 7px;
+  padding: 5px 10px;
+  background: #f4f4f4;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 10px;}
+  .btn{font-size: 10px; padding: 5px 10px;}
+}
+@media screen and (max-width: 580px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 10px;}
+  .btn{font-size: 10px; padding: 5px 10px;}
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
